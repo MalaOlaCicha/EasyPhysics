@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"           
+             xmlns:vm="clr-namespace:EasyPhysics_.CollectionViewModel"
+             x:Class="EasyPhysics_.Pages.KinematykaPage"
+             NavigationPage.HasNavigationBar="false">
+    
+    <ContentPage.BindingContext>
+        <vm:ViewItemsModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <CollectionView x:Name="collectionView" ItemsSource="{Binding Items, Mode=OneWay}" Margin="15, 15">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="15"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame HasShadow="True" BorderColor="#4F529F" BackgroundColor="#4F529F" CornerRadius="20">
+                            <StackLayout Orientation="Vertical" BackgroundColor="#4F529F" VerticalOptions="Center">
+                                <Frame CornerRadius="20" BackgroundColor="#4F529F">
+                                    <Label Text="{Binding Name}" FontSize="Medium" TextColor="White" BackgroundColor="#4F529F" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                </Frame>
+                                <Frame HasShadow="True" CornerRadius="20">
+                                    <Image x:Name="Image" Source="{Binding Png}" HeightRequest="50" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                </Frame>
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
