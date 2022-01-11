@@ -6,8 +6,16 @@
              NavigationPage.HasNavigationBar="false">
     
     <ContentPage.BindingContext>
-        <vm:ViewItemsModel/>
+        <vm:PatternDefinitionList/>
     </ContentPage.BindingContext>
+
+    <Grid>
+        <Frame HasShadow="True" HorizontalOptions="Start" 
+               VerticalOptions="End" CornerRadius="150" 
+               WidthRequest="50" HeightRequest="50" Padding="15"
+               Margin="20,20">
+        </Frame>
+    </Grid>
 
     <ContentPage.Content>
         <Grid>
@@ -15,15 +23,16 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <CollectionView x:Name="collectionView" ItemsSource="{Binding Items, Mode=OneWay}" Margin="15, 15">
+            <CollectionView x:Name="CollectionView" ItemsSource="{Binding Patterns, Mode=OneWay}" Margin="15, 0, 15, 0">
                 <CollectionView.ItemsLayout>
                     <LinearItemsLayout Orientation="Vertical" ItemSpacing="15"/>
                 </CollectionView.ItemsLayout>
-
+                    
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
+                        
                         <Frame HasShadow="True" BorderColor="#4F529F" BackgroundColor="#4F529F" CornerRadius="20">
-                            <StackLayout Orientation="Vertical" BackgroundColor="#4F529F" VerticalOptions="Center">
+                            <StackLayout Orientation="Vertical" BackgroundColor="#4F529F" VerticalOptions="Center" >
                                 <Frame CornerRadius="20" BackgroundColor="#4F529F">
                                     <Label Text="{Binding Name}" FontSize="Medium" TextColor="White" BackgroundColor="#4F529F" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
                                 </Frame>

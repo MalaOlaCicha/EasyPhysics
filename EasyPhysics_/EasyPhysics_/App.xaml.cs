@@ -1,6 +1,8 @@
 ﻿using System;
+using EasyPhysics_.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 
 namespace EasyPhysics_
 {

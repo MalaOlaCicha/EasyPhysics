@@ -4,15 +4,11 @@ using System.Text;
 
 namespace EasyPhysics_.Models
 {
-    class ItemsSpec
+    public class PatternDefinition
     {
         public int Id { get; set; }
         public String Name { get; set; }
         public String Png { get; set; }
 
-        internal static object Where(Func<object, bool> p)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
