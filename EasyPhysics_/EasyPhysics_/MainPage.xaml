@@ -1,75 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:controls="clr-namespace:MarcTron.Plugin.Controls;assembly=Plugin.MtAdmob"
+             xmlns:ads="clr-namespace:EasyPhysics_.Controls"
              x:Class="EasyPhysics_.MainPage"
              NavigationPage.HasNavigationBar="false">
 
     <Grid>
-        <Image Source="Wallpaper.png" Aspect="AspectFill"/>
-        <StackLayout Padding="17,17" HorizontalOptions="Center">
-            <Grid VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+        <Image Source="TloMenu2.png" Aspect="AspectFill"/>
+        <StackLayout Margin="40,25" HorizontalOptions="CenterAndExpand">
+            <Image Source="JakiDzial.png" VerticalOptions="Start" Margin="0,20,0,0"/>
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="Center" RowSpacing="15" ColumnSpacing="15" Margin="0,40">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="175"></RowDefinition>
-                    <RowDefinition Height="175"></RowDefinition>
-                    <RowDefinition Height="175"></RowDefinition>
+                    <RowDefinition Height="170"></RowDefinition>
+                    <RowDefinition Height="170"></RowDefinition>
+                    <RowDefinition Height="170"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="160"></ColumnDefinition>
+                    <ColumnDefinition Width="160"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Frame CornerRadius="30" WidthRequest="0" HeightRequest="0">
-                    <Button x:Name="Kinematyka" Text="Kinematyka" 
-                        FontSize="13" FontAttributes="Bold"
-                        VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand"
-                        TextColor="Black"
-                        BackgroundColor="White"
-                        Clicked="Kinematyka_Clicked"/>
+                <Frame CornerRadius="30" HasShadow="True">
+                    <StackLayout>
+                        <ImageButton Source="KinematykaIB.png" WidthRequest="100" HeightRequest="100"
+                                     VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  BackgroundColor="White"
+                                     Clicked="Kinematyka_Clicked" />
+                    </StackLayout>
                 </Frame>
 
-                <Frame CornerRadius="30" Grid.Row="0" Grid.Column="1">
-                    <Button x:Name="Termodynamika" Text="Termodynamika"
-                        FontSize="13" FontAttributes="Bold"
-                        VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand"
-                        TextColor="Black"
-                        BackgroundColor="White"
-                        />
+                <Frame CornerRadius="30" Grid.Row="0" Grid.Column="1" HasShadow="True">
+                    <StackLayout>
+                        <ImageButton Source="TermodynamikaIB.png" WidthRequest="100" HeightRequest="100"
+                                     VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  BackgroundColor="White"
+                                     Clicked="Termodynamika_Clicked"/>
+                    </StackLayout>
                 </Frame>
 
-                <Frame CornerRadius="30" Grid.Row="1" Grid.Column="0">
-                    <Button x:Name="Optyka" Text="Optyka"
-                        FontSize="13" FontAttributes="Bold"
-                        VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand"
-                        TextColor="Black"
-                        BackgroundColor="White"
-                        />
+                <Frame CornerRadius="30" Grid.Row="1" Grid.Column="0" HasShadow="True">
+                    <StackLayout>
+                        <ImageButton Source="OptykaIB.png" WidthRequest="100" HeightRequest="100"
+                                     VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  BackgroundColor="White"
+                                     Clicked="Optyka_Clicked"/>
+                    </StackLayout>
                 </Frame>
 
-                <Frame CornerRadius="30" Grid.Row="1" Grid.Column="1"
-                       BorderColor="LightGray" HasShadow="True">
-                    <Button x:Name="Magnetyzm" Text="Magnetyzm"
-                        FontSize="13" FontAttributes="Bold"
-                        VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand"
-                        TextColor="Black"
-                        BackgroundColor="White"
-                        />
+                <Frame CornerRadius="30" Grid.Row="1" Grid.Column="1" HasShadow="True">
+                    <StackLayout>
+                        <ImageButton Source="MagnetyzmIB.png" WidthRequest="100" HeightRequest="100"
+                                     VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  BackgroundColor="White"
+                                     Clicked="Magnetyzm_Clicked"/>
+                    </StackLayout>
                 </Frame>
 
-                <Frame CornerRadius="30" Grid.Row="2" Grid.Column="0">
-                    <Button x:Name="Elektrycznosc" Text="Elektryczność"
-                        FontSize="13" FontAttributes="Bold"
-                        VerticalOptions="FillAndExpand"
-                        HorizontalOptions="FillAndExpand"
-                        TextColor="Black"
-                        BackgroundColor="White"
-                        />
+                <Frame CornerRadius="30" Grid.Row="2" Grid.Column="0" HasShadow="True">
+                    <StackLayout>
+                        <ImageButton Source="ElektryczsnoscIB.png" WidthRequest="100" HeightRequest="100"
+                                     VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  BackgroundColor="White"
+                                     Clicked="Elektrycznosc_Clicked"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="30" Grid.Row="2" Grid.Column="1" HasShadow="True">
+                    <StackLayout>
+                        <ImageButton Source="DrganiaIB.png" WidthRequest="100" HeightRequest="100"
+                                     VerticalOptions="CenterAndExpand" HorizontalOptions="Center"  
+                                     BackgroundColor="White"
+                                     Clicked="Drgania_Clicked"/>
+                    </StackLayout>
                 </Frame>
             </Grid>
         </StackLayout>
-    </Grid>
 
+
+    </Grid>
 </ContentPage>

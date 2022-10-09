@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
-using EasyPhysics_.Pages;
-using EasyPhysics_.CollectionViewModel;
 
 namespace EasyPhysics_
 {
@@ -15,14 +8,12 @@ namespace EasyPhysics_
         public MainPage()
         {
             InitializeComponent();
-        }
+        }        
 
         private async void Kinematyka_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Pages.KinematykaPage());
         }
-
-        /*
         private async void Termodynamika_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Pages.TermodynamikaPage());
@@ -37,11 +28,15 @@ namespace EasyPhysics_
         {
             await Navigation.PushAsync(new Pages.MagnetyzmPage());
         }
-        
+
         private async void Elektrycznosc_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Pages.ElektrycznoscPage());
         }
-        */
+
+        private async void Drgania_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Pages.DrganiaPage());
+        }
     }
 }

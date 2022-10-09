@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620687077047",
+    "project_id": "easyphysics-eb30b",
+    "storage_bucket": "easyphysics-eb30b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620687077047:android:76d442df54ea0c5ddca732",
+        "android_client_info": {
+          "package_name": "com.companyname.easyphysics_"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620687077047-o8vuad1sequ24q4fg12nl6r9t784a988.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9YhKgjztHU4rVCaXs3jQQKZeRx2bP_7s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620687077047-o8vuad1sequ24q4fg12nl6r9t784a988.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

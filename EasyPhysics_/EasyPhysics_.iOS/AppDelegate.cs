@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
+using Google.MobileAds;
+using System;
 using UIKit;
 
 namespace EasyPhysics_.iOS

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPhysics_.Android", "EasyPhysics_\EasyPhysics_.Android\EasyPhysics_.Android.csproj", "{1E196EC9-99EA-45B8-AD16-B884ED9DD6FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPhysics_.iOS", "EasyPhysics_\EasyPhysics_.iOS\EasyPhysics_.iOS.csproj", "{63DC1591-4147-434D-9D76-EBBC0D272FEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPhysics_", "EasyPhysics_\EasyPhysics_\EasyPhysics_.csproj", "{5D4534C6-00AB-48B9-BA89-34983F5E4FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyPhysics_", "EasyPhysics_\EasyPhysics_\EasyPhysics_.csproj", "{5D4534C6-00AB-48B9-BA89-34983F5E4FA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

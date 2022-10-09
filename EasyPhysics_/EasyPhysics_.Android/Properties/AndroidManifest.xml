@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.easyphysics_" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="30" />
-	<application android:label="EasyPhysics_.Android" android:theme="@style/MainTheme"></application>
+	<application android:label="EasyPhysics_.Android" android:theme="@style/MainTheme" android:icon="@drawable/NoweLogoEP2">
+		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-8773770601290608~2692884394" />
+	</application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 </manifest>
